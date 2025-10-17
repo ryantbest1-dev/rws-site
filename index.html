@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryan's Web Solutions</title>
+  <meta name="description" content="Landing pages, script fixes, and fast web development.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="RWS logo" class="logo" />
+        <span class="brand-name">Ryan's Web <strong>Solutions</strong></span>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="menu" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero">
+      <svg class="matrix" aria-hidden="true">
+        <use href="assets/matrix.svg#grid"></use>
+      </svg>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Fast, clean, <span class="accent">techy</span> websites.</h1>
+          <p>I build dark, modern landing pages and fix scripts fast. Quick turnaround, clear communication, and affordable rates.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn btn-primary">Start a project</a>
+            <a href="#work" class="btn btn-link">See examples</a>
+          </div>
+          <ul class="badges">
+            <li>⚡ Same‑day fixes</li>
+            <li>🛠 Script & bug cleanup</li>
+            <li>📱 Mobile‑first</li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <div class="code-card">
+<pre><code>// app.js
+const rws = {
+  services: ['Landing Pages','Script Fixes','Integrations'],
+  contact: 'ryantbest1@gmail.com'
+}
+
+function quickFix(issue){
+  return `Resolved: ${issue} ✅`;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>Landing Pages</h3>
+            <p>Dark & modern landing pages that load fast and convert. Built with semantic HTML, modern CSS, and minimal JS.</p>
+          </article>
+          <article class="card">
+            <h3>Script & Bug Fixes</h3>
+            <p>Button not working? Console full of errors? I’ll diagnose and fix front‑end issues quickly.</p>
+          </article>
+          <article class="card">
+            <h3>Integrations</h3>
+            <p>Drop‑in scripts, embeds, analytics, and simple backend hooks. Cleanly integrated and tested across devices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <div class="grid three pricing">
+          <article class="card price">
+            <h3>Quick Fix</h3>
+            <p class="price-tag"><span>$</span>15<span class="small">+</span></p>
+            <ul>
+              <li>1 small bug or script</li>
+              <li>Same‑day delivery when possible</li>
+              <li>Post‑fix notes</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book a fix</a>
+          </article>
+          <article class="card price featured">
+            <div class="flag">Popular</div>
+            <h3>Landing Page</h3>
+            <p class="price-tag"><span>$</span>25<span class="small">+</span></p>
+            <ul>
+              <li>One page, mobile‑first</li>
+              <li>Hero, features, contact</li>
+              <li>1–2 rounds of tweaks</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Start now</a>
+          </article>
+          <article class="card price">
+            <h3>Custom Work</h3>
+            <p class="price-tag"><span>$</span>??</p>
+            <ul>
+              <li>Complex pages or flows</li>
+              <li>Integrations & logic</li>
+              <li>Quote in minutes</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Request quote</a>
+          </article>
+        </div>
+        <p class="fine">Prices are starting points. Final quote depends on scope; I’ll confirm before work begins.</p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2 class="section-title">Recent Work</h2>
+        <div class="grid three">
+          <figure class="work-card">
+            <div class="shot skeleton"></div>
+            <figcaption>Landing page with smooth scroll and crisp typography.</figcaption>
+          </figure>
+          <figure class="work-card">
+            <div class="shot skeleton"></div>
+            <figcaption>Script integration + error cleanup for a small business site.</figcaption>
+          </figure>
+          <figure class="work-card">
+            <div class="shot skeleton"></div>
+            <figcaption>Dark, techy promo page with responsive layout.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Let’s build something</h2>
+          <p>Tell me what you need and I’ll reply quickly with the next steps and a quote.</p>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:ryantbest1@gmail.com">ryantbest1@gmail.com</a></li>
+            <li>📱 <a href="tel:+12072718805">+1 (207) 271‑8805</a></li>
+          </ul>
+        </div>
+        <form class="card form" onsubmit="return contactSubmit(event)">
+          <label>
+            <span>Name</span>
+            <input required type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input required type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>What do you need?</span>
+            <textarea required name="message" rows="5" placeholder="Briefly describe your project"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="form-note">This opens your email app with a prefilled message (no server needed).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ryan's Web Solutions — Built with ❤️ and shipped on Vercel</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
